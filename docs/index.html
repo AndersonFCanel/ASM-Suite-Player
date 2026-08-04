@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASM Suite Player — Hi-Fi Audio Player with Google Drive Cloud Library</title>
-  <meta name="description" content="ASM Suite Player is a high-fidelity audio player with Google Drive integration, DSP processing, equalizer, offline caching, and zero data tracking.">
+  <title>ASM Suite Player — Official Website & Google Drive Hi-Fi Audio Player</title>
+  <meta name="description" content="ASM Suite Player is a high-fidelity audio player that connects to your Google Drive to stream, index, and play your personal music collection.">
   <meta name="keywords" content="ASM Suite Player, Google Drive music player, Hi-Fi audio player, FLAC player, DSP equalizer, offline cloud music">
   <meta name="author" content="ASM Suite Player Team">
   <meta name="robots" content="index, follow">
@@ -14,17 +14,17 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://andersonfcanel.github.io/ASM-Suite-Player/">
   <meta property="og:title" content="ASM Suite Player — Hi-Fi Audio Player with Google Drive Cloud Library">
-  <meta property="og:description" content="Stream high-resolution music directly from your Google Drive or local storage with professional DSP effects and full privacy.">
+  <meta property="og:description" content="ASM Suite Player allows users to stream, index, and play their personal music collection directly from Google Drive.">
   <meta property="og:image" content="https://andersonfcanel.github.io/ASM-Suite-Player/assets/images/logo.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ASM Suite Player — Hi-Fi Audio Player">
-  <meta name="twitter:description" content="Play high-fidelity music from Google Drive and local files with studio DSP equalizer and zero data collection.">
+  <meta name="twitter:description" content="Stream high-fidelity audio from Google Drive with studio equalizer and zero data tracking.">
   <meta name="twitter:image" content="https://andersonfcanel.github.io/ASM-Suite-Player/assets/images/logo.png">
 
   <!-- Favicons & Manifest -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="manifest" href="site.webmanifest">
 
   <!-- Fonts & Icons -->
@@ -52,9 +52,9 @@
 
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#purpose">App Purpose</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#how-it-works">How it Works</a></li>
-        <li><a href="#privacy">Privacy</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -75,37 +75,42 @@
       </div>
 
       <h1 class="hero-title">ASM Suite Player</h1>
-      <p class="hero-subtitle">Hi-Fi Audio Player with Google Drive Cloud Library</p>
+      <p class="hero-subtitle">High-Fidelity Audio Player & Cloud Media Library for Google Drive</p>
 
-      <p style="max-width: 820px; margin: 0 auto 32px; color: #CBD5E1; font-size: 1.05rem;">
-        <strong>ASM Suite Player</strong> lets you stream and enjoy high-fidelity music directly from your personal 
-        local files and Google Drive cloud storage. You maintain 100% ownership of your audio files. 
-        No files are ever sold or shared. The application only accesses folders and files explicitly authorized by you.
-      </p>
-
-      <div class="hero-actions">
-        <a href="https://github.com/AndersonFCanel/ASM-Suite-Player" target="_blank" rel="noopener" class="btn-cta">
-          <i class="fa-brands fa-github"></i> View Repository
-        </a>
-        <a href="privacy.html" class="btn-outline">
-          <i class="fa-solid fa-lock"></i> Privacy Policy
-        </a>
-        <a href="terms.html" class="btn-outline">
-          <i class="fa-solid fa-file-contract"></i> Terms of Use
-        </a>
+      <!-- EXPLICIT APPLICATION PURPOSE BOX FOR GOOGLE VERIFICATION -->
+      <div style="background: rgba(15, 23, 42, 0.9); border: 2px solid var(--accent-cyan); border-radius: var(--radius-lg); padding: 32px; margin: 0 auto 36px; max-width: 900px; text-align: left;" id="purpose">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+          <i class="fa-solid fa-circle-info" style="font-size: 2rem; color: var(--accent-cyan);"></i>
+          <h2 style="font-size: 1.5rem; color: #FFFFFF; margin: 0;">Application Purpose & Google Drive API Integration</h2>
+        </div>
+        <p style="color: #E2E8F0; font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">
+          <strong>ASM Suite Player</strong> is a specialized high-fidelity desktop and mobile music player designed to give users direct access to their personal audio files stored in <strong>Google Drive</strong>.
+        </p>
+        <p style="color: #CBD5E1; font-size: 0.98rem; line-height: 1.6; margin-bottom: 16px;">
+          <strong>How ASM Suite Player Uses Google Drive API:</strong><br>
+          By authorizing read-only access (<code style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--accent-cyan);">drive.readonly</code>), <strong>ASM Suite Player</strong> allows users to:
+        </p>
+        <ul style="color: #CBD5E1; font-size: 0.95rem; line-height: 1.7; padding-left: 24px; margin-bottom: 16px;">
+          <li>Browse and select specific music folders stored in their personal Google Drive storage.</li>
+          <li>Extract audio metadata (artist names, album titles, track numbers, and embedded cover art) for seamless library organization.</li>
+          <li>Stream high-resolution audio formats (FLAC, WAV, ALAC, MP3, AAC) directly to the local studio audio engine.</li>
+          <li>Cache selected tracks for offline listening when internet connectivity is unavailable.</li>
+        </ul>
+        <p style="color: var(--accent-cyan); font-size: 0.95rem; font-weight: 600; margin-bottom: 0;">
+          <i class="fa-solid fa-lock"></i> User Privacy Guarantee: Users maintain 100% ownership of their files. No music files or personal data are collected, sold, or shared with third parties.
+        </p>
       </div>
 
-      <!-- Google OAuth Disclosure Box -->
-      <div class="hero-card-preview">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-          <i class="fa-brands fa-google-drive" style="font-size: 1.8rem; color: var(--accent-cyan);"></i>
-          <h3 style="font-size: 1.25rem;">Google Drive API Scope Notice</h3>
-        </div>
-        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
-          <strong>ASM Suite Player</strong> uses read-only Google Drive API scope (<code style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--accent-cyan);">drive.readonly</code>) 
-          strictly to display, index, and stream your personal music collection. The app operates locally on your device; 
-          it does not send your music, credentials, or personal metadata to any external server or third party.
-        </p>
+      <div class="hero-actions">
+        <a href="privacy.html" class="btn-cta">
+          <i class="fa-solid fa-file-shield"></i> Read Privacy Policy
+        </a>
+        <a href="terms.html" class="btn-outline">
+          <i class="fa-solid fa-file-contract"></i> Terms of Service
+        </a>
+        <a href="https://github.com/AndersonFCanel/ASM-Suite-Player" target="_blank" rel="noopener" class="btn-outline">
+          <i class="fa-brands fa-github"></i> GitHub Source Code
+        </a>
       </div>
     </div>
   </section>
@@ -328,9 +333,9 @@
           <h4>Navigation</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="#purpose">App Purpose</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#privacy">Privacy</a></li>
           </ul>
         </div>
 
