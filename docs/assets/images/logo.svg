@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5A0"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF9800"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Base Badge -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bgGrad)" stroke="#334155" stroke-width="4"/>
+
+  <!-- Glowing Soundwaves & Cloud Emblem -->
+  <g transform="translate(0, -10)">
+    <!-- Outer Audio Arc Rings -->
+    <path d="M 170 330 A 130 130 0 0 1 170 190" fill="none" stroke="url(#cyanGrad)" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 342 190 A 130 130 0 0 1 342 330" fill="none" stroke="url(#cyanGrad)" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+    
+    <path d="M 140 355 A 170 170 0 0 1 140 165" fill="none" stroke="url(#cyanGrad)" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+    <path d="M 372 165 A 170 170 0 0 1 372 355" fill="none" stroke="url(#cyanGrad)" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+
+    <!-- Cloud Outline -->
+    <path d="M 190 320 L 320 320 A 45 45 0 0 0 355 245 A 55 55 0 0 0 250 205 A 45 45 0 0 0 190 250 A 40 40 0 0 0 190 320 Z" 
+          fill="none" stroke="url(#cyanGrad)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+
+    <!-- Audio Equalizer Bars Inside Cloud Center -->
+    <g fill="url(#goldGrad)">
+      <rect x="206" y="260" width="10" height="40" rx="5"/>
+      <rect x="226" y="240" width="10" height="60" rx="5"/>
+      <rect x="246" y="225" width="10" height="75" rx="5"/>
+      <rect x="266" y="235" width="10" height="65" rx="5"/>
+      <rect x="286" y="250" width="10" height="50" rx="5"/>
+    </g>
+  </g>
+
+  <!-- Sleek Brand Pill Accent -->
+  <rect x="186" y="415" width="140" height="12" rx="6" fill="url(#cyanGrad)"/>
+</svg>

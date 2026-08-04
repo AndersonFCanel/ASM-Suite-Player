@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andersonfcanel.github.io/ASM-Suite-Player/sitemap.xml
