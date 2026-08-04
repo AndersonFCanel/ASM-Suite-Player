@@ -3,7 +3,7 @@
   "short_name": "ASM Suite Player",
   "icons": [
     {
-      "src": "assets/images/logo.svg",
+      "src": "assets/images/logo.png",
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
